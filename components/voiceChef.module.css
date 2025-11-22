@@ -1,0 +1,95 @@
+.container {
+  position: relative; /* ★ 이것 없으면 절대 가운데 안 잡힘 */
+  width: 100%;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffcf5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.status {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.holder {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.timer {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ff4757;
+  margin: 20px 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.inputContainer {
+  background: url("/aiBorder.svg") no-repeat center/100% 100%;
+  background-size: contain;
+  height: 15rem;
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputInner {
+  padding: 0 1rem;
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  justify-content: center;
+}
+
+.centerImage {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 20rem;
+  height: auto;
+  cursor: pointer;
+}
+
+.heartbeat {
+  animation: heartbeat 1.5s infinite ease-in-out;
+  transform-origin: center center;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.01);
+  }
+  40% {
+    transform: scale(0.98);
+  }
+  60% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.fixedStop {
+  position: fixed;
+  bottom: 20vh; /* 👈 화면(뷰포트) 높이의 10% 위 */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}

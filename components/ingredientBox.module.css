@@ -1,0 +1,14 @@
+.whole_container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  border: 8px solid;
+  border-image: url("/ingreBorder.svg") 8 fill round;
+  white-space: normal; /* ★ 자동 줄바꿈 */
+  flex-wrap: wrap; /* ★ flex에서 줄바꿈 허용 */
+  padding: 1rem;
+  max-height: 50vh; /* 원하는 높이로 조정 */
+  overflow-y: auto; /* 스크롤 활성화 */
+  flex-wrap: nowrap; /* wrap 제거해야 스크롤 정상작동 */
+  box-sizing: border-box; /* padding 포함하여 정렬 안정 */
+}

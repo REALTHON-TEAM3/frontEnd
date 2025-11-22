@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10vh; /* ★ 텍스트를 위로 올림 */
+}
+
+/* AI 아이콘이 화면 위쪽 40% 지점에서 좌→우로 이동 */
+.moveHorizontal {
+  position: fixed; /* 화면 기준 고정 */
+  top: 0%; /* 화면 상단 40% 지점 */
+  left: -20vw; /* 처음 화면 왼쪽 밖에서 시작 */
+  width: 10rem; /* 원하는 크기 */
+  height: auto;
+  animation: move 3s linear infinite;
+  z-index: 10; /* 텍스트 위에 표시 */
+}
+
+/* 이미지 좌→우 이동 애니메이션 */
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(140vw); /* 화면 오른쪽 밖으로 이동 */
+  }
+}
+
+.textBox {
+  position: absolute;
+  top: 20%; /* 화면 위에서 40% 지점 */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}

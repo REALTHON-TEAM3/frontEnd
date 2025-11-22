@@ -1,0 +1,24 @@
+.whole_container {
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.holder {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.readyBtn {
+  margin-top: 5rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  background-color: #f8ad00;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}

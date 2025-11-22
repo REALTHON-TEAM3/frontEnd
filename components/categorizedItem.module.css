@@ -1,0 +1,16 @@
+.cateName {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.whole_container {
+  margin-bottom: 2rem;
+}
+
+.item_container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}

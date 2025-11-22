@@ -1,0 +1,43 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.box {
+  border: 2px solid #f8ad00;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+}
+.button_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.out {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: white;
+  color: #f8ad00;
+  border-radius: 8px;
+  border: 1px solid #f8ad00;
+}
+.keep {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #f8ad00;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}

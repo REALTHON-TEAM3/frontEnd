@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.resultImage {
+  margin-top: 10rem;
+}
+
+.container > div {
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}

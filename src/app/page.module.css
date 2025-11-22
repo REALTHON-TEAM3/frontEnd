@@ -1,0 +1,8 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/intro.svg");
+  background-size: 110% auto; /* ← 이미지 강제로 10% 크게 */
+  background-position: center;
+  background-repeat: no-repeat;
+}

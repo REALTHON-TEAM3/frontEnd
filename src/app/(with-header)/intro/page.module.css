@@ -1,0 +1,110 @@
+.whole_container {
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+}
+.input_container {
+  position: relative;
+  background: url("/inputBorder.svg") no-repeat center/100% 100%;
+  height: 3rem;
+  width: 100%;
+  padding: 0 1rem; /* 버튼 간격만 유지 */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.holder {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.inputBox {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  padding-left: 1.5rem; /* placeholder 위치와 동일하게 */
+  outline: none;
+  font-size: 1rem;
+}
+
+.inputBox input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  font-size: 16px;
+}
+
+button.btn {
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  background: url("/button.svg") no-repeat center/contain;
+  border: none;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+button.btn:active {
+  transform: scale(0.97); /* 클릭 시 살짝 눌리는 느낌 */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.placeholder-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0; /* ★ 절대 0 */
+  width: 100%; /* ★ 절대 100% */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  padding-left: 3rem; /* 여백은 여기서 */
+  overflow: hidden; /* ★ 안전 */
+}
+.fake-placeholder {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap; /* 자동 줄바꿈 방지 */
+  opacity: 0.5;
+}
+.fake-placeholder {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  opacity: 0.5;
+  margin-left: 0; /* padding-left 대신 여기 추가 */
+  white-space: nowrap; /* 줄바꿈 방지 */
+}
+
+.fake-placeholder {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.inputinput {
+  border: none;
+  background-color: transparent;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  width: calc(100% - 1.5rem);
+}
+
+/* loadingWrapper: IsLoading을 담는 부모 컴포넌트 */
+.loadingWrapper {
+  position: fixed;
+  top: 40vh; /* 뷰포트 상단에서 40% */
+  left: 50%; /* 가로 중앙 */
+  transform: translateX(-50%);
+  z-index: 9999; /* 필요한 경우 위로 올림 */
+}
