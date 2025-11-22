@@ -28,8 +28,13 @@
 .timer {
   font-size: 4rem;
   font-weight: bold;
-  color: #ff4757;
-  margin: 20px 0;
+  color: #57cf00;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  background-image: url("/timer.svg"); /* public/timer-bg.svg 에 있다고 가정 */
+  background-size: cover; /* or contain */
+  background-position: center;
+  background-repeat: no-repeat;
   font-variant-numeric: tabular-nums;
 }
 

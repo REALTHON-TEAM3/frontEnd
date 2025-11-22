@@ -242,7 +242,6 @@ export default function VoiceChef() {
       {!startDisabled && (
         <div className={styles.holder}>요리할 준비가 되었다면?</div>
       )}
-
       {timerVisible && <div className={styles.timer}>{timerText}</div>}
 
       {!startDisabled && (
