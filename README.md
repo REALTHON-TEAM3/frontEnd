@@ -14,8 +14,8 @@
 
 |                 메인 화면                  |                 요리 준비                  |
 | :----------------------------------------: | :----------------------------------------: |
-| <img src="./screenshots/image_1.jpg" alt="메인 화면" width="400" /> | <img src="./screenshots/image_4.jpg" alt="요리 준비" width="400" /> |
-| <img src="./screenshots/image_2.jpg" alt="요리 진행" width="400" /> | <img src="./screenshots/image_5.jpg" alt="요리 결과" width="400" /> |
+| <img src="./screenshots/image_1.jpg" alt="메인 화면" width="200" /> | <img src="./screenshots/image_4.jpg" alt="요리 준비" width="200" /> |
+| <img src="./screenshots/image_2.jpg" alt="요리 진행" width="200" /> | <img src="./screenshots/image_5.jpg" alt="요리 결과" width="200" /> |
 
 
 ## 🛠️ 기술 스택
