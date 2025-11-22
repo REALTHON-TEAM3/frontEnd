@@ -14,7 +14,7 @@
 
 |                 메인 화면                  |                 요리 준비                  |
 | :----------------------------------------: | :----------------------------------------: |
-| <img src="image_1" alt="메인 화면" width="400" /> | <img src="image_4" alt="요리 준비" width="400" /> |
+| <img src="./screenshots/image_1" alt="메인 화면" width="400" /> | <img src="image_4" alt="요리 준비" width="400" /> |
 |               **요리 진행**                |               **요리 결과**                |
 | <img src="image_2" alt="요리 진행" width="400" /> | <img src="image_5" alt="요리 결과" width="400" /> |
 
